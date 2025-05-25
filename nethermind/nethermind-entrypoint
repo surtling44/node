@@ -60,4 +60,8 @@ exec ./nethermind \
     --HealthChecks.Enabled=true \
     --Metrics.Enabled=true \
     --Metrics.ExposePort="$METRICS_PORT" \
+    --Sync.FastSync=true \
+    --Sync.NonValidatorNode=true \
+    --Sync.DownloadBodiesInFastSync=false \
+    --Sync.DownloadReceiptsInFastSync=false \
     $ADDITIONAL_ARGS
