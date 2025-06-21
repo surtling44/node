@@ -61,6 +61,7 @@ exec ./nethermind \
     --Metrics.Enabled=true \
     --Metrics.ExposePort="$METRICS_PORT" \
     --Sync.FastSync=true \
+    --Sync.SnapSync=true \
     --Sync.NonValidatorNode=true \
     --Sync.DownloadBodiesInFastSync=false \
     --Sync.DownloadReceiptsInFastSync=false \
